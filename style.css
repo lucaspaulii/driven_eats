@@ -100,6 +100,7 @@ body {
     width: 19px;
     height: 19px;
     color:#32B72F;
+    z-index: 0;
 }
 
 .comida1 img {

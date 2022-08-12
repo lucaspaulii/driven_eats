@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Driven Eats</title>
+</head>
+    <body>
+
+        <div class="header">
+            <div class="header-content">
+                <h1>DrivenEats</h1>
+                <p>Sua comida em 6 minutos</p>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="prato">
+
+                <div class="titulo">
+                    <h2>Primeiro, seu prato</h2>
+                </div>
+
+                <div class="barra">
+                    <div class="opcao" id="comida1" onclick="selecionarComida('#comida1')">
+                        <img src="./source/frangonobalde.png" alt="Frango no balde" />
+                        <h3>Frango no Balde</h3>
+                        <h4>Simplesmente a maior obra prima já criada.</h4>
+                        <div class="opcao-footer">
+                            <p>R$<span>19.90</span></p>
+                            <img src="./source/checkmark-circle 1.png" class="escondido" id="comida1icon"/>
+                        </div>
+                    </div>
+                    <div class="opcao" id="comida2" onclick="selecionarComida('#comida2')">
+                        <img src="./source/hamburgao.png" alt="hamburguer" />
+                        <h3>Hamburgão</h3>
+                        <h4>Só um hamburgão mesmo, mais nada.</h4>
+                        <div class="opcao-footer">
+                            <p>R$<span>20.50</span></p>
+                            <img src="./source/checkmark-circle 1.png" class="escondido" id="comida2icon"/>
+                        </div>
+                    </div>
+                    <div class="opcao" id="comida3" onclick="selecionarComida('#comida3')">
+                        <img src="./source/sushi.png" alt="sushi" />
+                        <h3>Sushizin</h3>
+                        <h4>É japonês, é bom, é tudo</h4>
+                        <div class="opcao-footer">
+                            <p>R$<span>42.30</span></p>
+                            <img src="./source/checkmark-circle 1.png" class="escondido" id="comida3icon"/>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bebida">
+
+                <div class="titulo">
+                    <h2>Agora, sua bebida</h2>
+                </div>
+
+                <div class="barra">
+                    <div class="opcao" id="bebida1" onclick="selecionarBebida('#bebida1')">
+                        <img src="./source/coquinha_gelada 1.png" alt="Coca-cola" />
+                        <h3>Coquinha gelada</h3>
+                        <h4>Lata 350ml</h4>
+                        <div class="opcao-footer">
+                            <p>R$<span>5.50</span></p>
+                            <img src="./source/checkmark-circle 1.png" class="escondido" id="bebida1icon"/>
+                        </div>
+                    </div>
+                    <div class="opcao" id="bebida2" onclick="selecionarBebida('#bebida2')">
+                        <img src="./source/guarana.png" alt="guarana" />
+                        <h3>Guaranazin</h3>
+                        <h4>Lata 350ml</h4>
+                        <div class="opcao-footer">
+                            <p>R$<span>4.90</span></p>
+                            <img src="./source/checkmark-circle 1.png" class="escondido" id="bebida2icon" />
+                        </div>
+                    </div>
+                    <div class="opcao" id="bebida3" onclick="selecionarBebida('#bebida3')">
+                        <img src="./source/kombucha.png" alt="kombucha" />
+                        <h3>Kombucha</h3>
+                        <h4>Garrafinha que ngm sabe o tamanho</h4>
+                        <div class="opcao-footer">
+                            <p>R$<span>9.95</span></p>
+                            <img src="./source/checkmark-circle 1.png" class="escondido" id="bebida3icon" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sobremesa">
+
+                <div class="titulo">
+                    <h2>Por fim, sua sobremesa</h2>
+                </div>
+
+                <div class="barra">
+                    <div class="opcao" id="sobremesa1" onclick="selecionarSobremesa('#sobremesa1')">
+                        <img src="./source/pudim 1.png" alt="Pudim" />
+                        <h3>Pudim</h3>
+                        <h4>Apenas pudim</h4>
+                        <div class="opcao-footer">
+                            <p>R$<span>7.90</span></p>
+                            <img src="./source/checkmark-circle 1.png" class="escondido" id="sobremesa1icon"/>
+                        </div>
+                    </div>
+                    <div class="opcao" id="sobremesa2" onclick="selecionarSobremesa('#sobremesa2')">
+                        <img src="./source/sonho de valsa.png" alt="sonho de valsa" />
+                        <h3>Sonho de Valsa</h3>
+                        <h4>Pra quem ta duro e quer um doce</h4>
+                        <div class="opcao-footer">
+                            <p>R$<span>1.00</span></p>
+                            <img src="./source/checkmark-circle 1.png" class="escondido" id="sobremesa2icon"/>
+                        </div>
+                    </div>
+                    <div class="opcao" id="sobremesa3" onclick="selecionarSobremesa('#sobremesa3')">
+                        <img src="./source/banoffee.png" alt="banoffee" />
+                        <h3>Banoffee</h3>
+                        <h4>Não, não é banana com coffee, é toffee</h4>
+                        <div class="opcao-footer">
+                            <p>R$<span>10.00</span></p>
+                            <img src="./source/checkmark-circle 1.png" class="escondido" id="sobremesa3icon" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            <div class="button">
+                <p>Selecione os 3 itens para fechar o pedido</p>
+            </div>
+            <div class="trigger indisponivel" onclick="confirmarPedido()">
+            </div>
+        </div>
+
+        <div class="confirmarpedido indisponivel">
+        </div>
+
+        <div class="dadosconfirmacao escondido">
+            <div class="header-confirm">
+                <h2>Confirme seu pedido</h2>
+            </div>
+            <div class="confirm-organizer">
+                <p id='prato-confirmado'></p>
+                <p id="preco-prato-confirmado"></p>
+            </div>
+            <div class="confirm-organizer">
+                <p id="bebida-confirmado"></p>
+                <p id="preco-bebida-confirmado"></p>
+            </div>
+            <div class="confirm-organizer">
+                <p id="sobremesa-confirmado"></p>
+                <p id="preco-sobremesa-confirmado"></p>
+            </div>
+            <div class="confirm-total">
+                <h2>TOTAL</h2>
+                <h2>R$<span></span></h2>
+            </div>
+            <div class="confirm-button" onclick="fecharPedido()">
+                <h3>Tudo certo, pode pedir!</h3>
+            </div>
+            <div class="cancel-button" onclick="cancelarPedido()">
+                <h4>Cancelar</h4>
+            </div>               
+        </div>
+
+        <script src="./script.js"></script> 
+    </body>
+</html>

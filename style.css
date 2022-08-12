@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.header {
+    background-color: #CF2B2B;
+    width: 100%;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+}
+
+.header .header-content {
+    margin-left: 21px;
+}
+
+.header .header-content h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+}
+
+.header .header-content h2 {
+    font-size: 18px;
+}
+
+.content {
+    margin: 108px 0 108px 0px;
+}
+.content .titulo {
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    color: #333333;
+    margin-left: 18px;
+}
+
+.prato, .bebida, .sobremesa {
+    height: 258px;
+    width: 100%;
+    margin-top: 27px;
+}
+.barra {
+    height: 216px;
+    margin-top: 17px;
+    display: flex;
+    overflow-x: scroll;
+}
+.barra::-webkit-scrollbar {
+    display: none;
+  }
+.opcao {
+    min-width: 172px;
+    max-width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    padding: 18px 14px;
+    border-radius: 9px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.opcao h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.opcao h4 {
+    font-size: 15px;
+    color: #A6A6A6;
+}
+.opcao img {
+    width: 144px;
+    height: auto;
+}
+.opcao-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+.opcao-footer img {
+    width: 19px;
+    height: 19px;
+}
+
+.comida1 img {
+    width: 100%;
+    height: auto;    
+}
+
+.footer {
+    background-color: #FFFFFF;
+    height: 92px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .button {
+    width: 364px;
+    background-color: #CBCBCB;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 0 25px;
+    font-size: 20px;
+    height: 61px;
+}
+.footer .button p {
+    width: 195px;
+}
+.disponivel {
+    background-color: #32B72F !important;
+    transition-duration: 0.35s;
+}
+
+.selecionado {
+    border: solid #32B72F 5px;
+    cursor: pointer;
+    transition-duration: 0.35s;
+}
+.escondido {
+    visibility: hidden;
+}
+.visivel {
+    visibility: visible !important;
+    transition-duration: 0.35s;
+}
+.trigger {
+    position: absolute;
+    bottom: 10;
+    height: 61px;
+    width: 364px;
+}
+.indisponivel {
+    display: none;
+}
+.podeclicar {
+    display: block !important;
+}
+.confirmarpedido {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-color: rgba(238, 238, 238, 0.8)
+}
+.dadosconfirmacao {
+    background-color: #50D074;
+    width: 90%;
+    height: 353px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 300;
+    margin: auto auto;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.confirm-organizer, .confirm-total {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.header-confirm {
+    margin: 15px 0;
+}
+.confirm-total {
+    margin-bottom: 10px;
+}
+.dadosconfirmacao h2 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+.dadosconfirmacao p {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+}
+.confirm-button {
+    background-color: #FFFFFF;
+    width: 80%;
+    height: 52px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #50D074;
+    font-size: 22px;
+    font-weight: 700;
+}
+.cancel-button {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

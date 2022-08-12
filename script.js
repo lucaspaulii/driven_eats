@@ -78,10 +78,12 @@ function fecharPedido() {
     const pratoPedido = pratoPedidoTarget.innerHTML;
     const bebidaPedido = bebidaPedidoTarget.innerHTML;
     const sobremesaPedido = sobremesaPedidoTarget.innerHTML;
-    const precoPrato = Number(precoPratoTarget.innerHTML);
-    const precoBebida = Number(precoBebidaTarget.innerHTML);
-    const precoSobremesa = Number(precoSobremesaTarget.innerHTML);
-    const precoTotal = precoPrato + precoBebida + precoSobremesa;
+    const precoPrato = Number(precoPratoTarget.innerHTML.replaceAll(',', '.'));
+    const precoBebida = Number(precoBebidaTarget.innerHTML.replaceAll(',', '.'));
+    const precoSobremesa = Number(precoSobremesaTarget.innerHTML.replaceAll(',', '.'));
+    const precoTotal = (precoPrato + precoBebida + precoSobremesa).toFixed(2);
+    const precoTotalStr = precoTotal.toString();
+    const precoTotalStrComma = precoTotalStr.replaceAll('.', ',');
     alert('Para confirmação do pedido vamos precisar de mais alguns dados seus! E não se preocupe, seu pedido já vai prontinho pro nosso WhatsApp 😉')
     const nome = prompt('Qual seu nome?');
     const endereco = prompt('Favor inserir endereço de entrega')
@@ -89,7 +91,7 @@ function fecharPedido() {
 - Prato: ${pratoPedido}
 - Bebida: ${bebidaPedido}
 - Sobremesa: ${sobremesaPedido}
-Total: R$ ${precoTotal.toFixed(2)}
+Total: R$ ${precoTotalStrComma}
     
 Nome: ${nome}
 Endereço: ${endereco}`)
@@ -108,29 +110,31 @@ function confirmarPedido() {
     const pratoPedido = pratoPedidoTarget.innerHTML;
     const bebidaPedido = bebidaPedidoTarget.innerHTML;
     const sobremesaPedido = sobremesaPedidoTarget.innerHTML;
-    const precoPrato = Number(precoPratoTarget.innerHTML);
-    const precoBebida = Number(precoBebidaTarget.innerHTML);
-    const precoSobremesa = Number(precoSobremesaTarget.innerHTML);
-    const precoTotal = precoPrato + precoBebida + precoSobremesa;
+    const precoPrato = Number(precoPratoTarget.innerHTML.replaceAll(',', '.'));
+    const precoBebida = Number(precoBebidaTarget.innerHTML.replaceAll(',', '.'));
+    const precoSobremesa = Number(precoSobremesaTarget.innerHTML.replaceAll(',', '.'));
+    const precoTotal = (precoPrato + precoBebida + precoSobremesa).toFixed(2);
+    const precoTotalStr = precoTotal.toString();
+    const precoTotalStrComma = precoTotalStr.replaceAll('.', ',');
 
 
     const textoPrato = document.querySelector('#prato-confirmado');
     textoPrato.innerHTML = pratoPedido;
     const textoPrecoPrato = document.querySelector('#preco-prato-confirmado');
-    textoPrecoPrato.innerHTML = precoPrato;
+    textoPrecoPrato.innerHTML = precoPratoTarget.innerHTML;
     
     const textoBebida = document.querySelector('#bebida-confirmado');
     textoBebida.innerHTML = bebidaPedido;
     const textoPrecoBebida = document.querySelector('#preco-bebida-confirmado');
-    textoPrecoBebida.innerHTML = precoBebida;
+    textoPrecoBebida.innerHTML = precoBebidaTarget.innerHTML;
 
     const textoSobremesa = document.querySelector('#sobremesa-confirmado');
-    textoSobremesa.innerHTML = sobremesaPedidoTarget.innerHTML;
+    textoSobremesa.innerHTML = sobremesaPedido;
     const textoPrecoSobremesa = document.querySelector('#preco-sobremesa-confirmado');
-    textoPrecoSobremesa.innerHTML = precoSobremesa;
+    textoPrecoSobremesa.innerHTML = precoSobremesaTarget.innerHTML;
 
     const textoTotal = document.querySelector('.confirm-total span');
-    textoTotal.innerHTML = precoTotal.toFixed(2);
+    textoTotal.innerHTML = precoTotalStrComma;
 
     const backgroundConfirmacaoEscondido = document.querySelector('.confirmarpedido');
     backgroundConfirmacaoEscondido.classList.remove('indisponivel');

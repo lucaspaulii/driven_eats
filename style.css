@@ -17,6 +17,7 @@ body {
     color: #FFFFFF;
     position: fixed;
     top: 0;
+    box-shadow: 0px 0px 9px 4px #919191;
 }
 
 .header .header-content {
@@ -48,10 +49,12 @@ body {
     margin-top: 27px;
 }
 .barra {
-    height: 216px;
-    margin-top: 17px;
+    height: 236px;
+    margin-top: 7px;
+    padding: 10px 0;
     display: flex;
     overflow-x: scroll;
+    overflow-y: visible;
 }
 .barra::-webkit-scrollbar {
     display: none;
@@ -67,6 +70,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0px 0px 8px -2px #919191;
 }
 
 .opcao h3 {
@@ -81,7 +85,8 @@ body {
 }
 .opcao img {
     width: 144px;
-    height: auto;
+    height: 87px;
+    border-radius: 4px;
 }
 .opcao-footer {
     display: flex;
@@ -93,6 +98,11 @@ body {
 .opcao-footer img {
     width: 19px;
     height: 19px;
+}
+.opcao-footer ion-icon {
+    width: 19px;
+    height: 19px;
+    color:#32B72F;
 }
 
 .comida1 img {
@@ -132,9 +142,7 @@ body {
 }
 
 .selecionado {
-    border: solid #32B72F 5px;
-    cursor: pointer;
-    transition-duration: 0.35s;
+    box-shadow: inset 0px 0px 0px 5px #32B72F, 0px 3px 6px 0px #4F4F4F;
 }
 .escondido {
     visibility: hidden;
@@ -164,7 +172,7 @@ body {
     left: 0;
     right: 0;
     z-index: 200;
-    background-color: rgba(238, 238, 238, 0.8)
+    background-color: rgba(238, 238, 238, 0.9);
 }
 .dadosconfirmacao {
     background-color: #50D074;
@@ -182,6 +190,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 0px 0px 10px 5px #b6b6b6;
 }
 .confirm-organizer, .confirm-total {
     display: flex;

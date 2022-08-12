@@ -106,6 +106,7 @@ Endereço: ${endereco}`)
     window.open(urlWhats);
 }
 
+
 function confirmarPedido() {
     const pratoPedidoTarget = document.querySelector('.prato .selecionado h3');
     const bebidaPedidoTarget = document.querySelector('.bebida .selecionado h3');

@@ -85,8 +85,14 @@ function fecharPedido() {
     const precoTotalStr = precoTotal.toString();
     const precoTotalStrComma = precoTotalStr.replaceAll('.', ',');
     alert('Para confirmação do pedido vamos precisar de mais alguns dados seus! E não se preocupe, seu pedido já vai prontinho pro nosso WhatsApp 😉')
-    const nome = prompt('Qual seu nome?');
-    const endereco = prompt('Favor inserir endereço de entrega')
+    let nome = prompt('Qual seu nome?');
+    while (nome === null) {
+        nome = prompt('Você não preencheu! Favor colocar seu nome')
+    }
+    let endereco = prompt('Favor inserir endereço de entrega')
+    while (endereco === null) {
+        endereco = prompt('Você não preencheu! Favor colocar seu endereço de entrega')
+    }
     const pedido = (`Olá, gostaria de fazer o pedido:
 - Prato: ${pratoPedido}
 - Bebida: ${bebidaPedido}

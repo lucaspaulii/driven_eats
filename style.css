@@ -257,6 +257,7 @@ body {
     background-color: #ffffff;
     height: 300px;
     border-radius: 30px;
+    box-shadow: 0px 0px 22px -2px #000000;
 }
 .lang-title {
     height: 80px;
@@ -265,11 +266,18 @@ body {
     margin-top: 20px;
     font-family: 'Righteous', cursive;
     font-size: 44px;
+    font-weight: 500;
+    text-shadow: 2px 4px 6px rgba(71, 71, 71, 0.404);
 }
 .lang-description {
     text-align: center;
     font-size: 22px;
     font-weight: 600;
+}
+.lang-description p {
+    margin-top: 7px;
+    font-weight: 300;
+    color:#4F4F4F;
 }
 .flags {
     display: flex;

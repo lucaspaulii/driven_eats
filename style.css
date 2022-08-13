@@ -282,6 +282,7 @@ body {
 .flags {
     display: flex;
 }
+
 .flags img {
     width: 100px;
     height: auto;

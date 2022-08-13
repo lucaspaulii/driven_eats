@@ -133,6 +133,7 @@ body {
 }
 .footer .button p {
     width: 195px;
+    text-align: center;
 }
 .disponivel {
     background-color: #32B72F !important;
@@ -232,4 +233,49 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.lang-selection {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-color: #CF2B2B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lang-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    height: 300px;
+    border-radius: 30px;
+}
+.lang-title {
+    height: 80px;
+}
+.lang-title h1 {
+    margin-top: 20px;
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+}
+.lang-description {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.flags {
+    display: flex;
+}
+.flags img {
+    width: 100px;
+    height: auto;
+    margin: 15px 30px;
 }

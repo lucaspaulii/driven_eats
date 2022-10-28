@@ -1,7 +1,7 @@
 # driven_eats
-Projeto elaborado durante o bootcamp de Desenvolvimento Full Stack da Driven Education
-(Feito com instruções de funcionamento e layout via Figma)
-.
-.
-Project developed during the Full Stack bootcamp from Driven Education
-(developed following instructions of how it was supposed to work and layout via figma)
+
+Project developed using Javascript Vanilla CSS and HTML, the website allows the user to choose a food, a drink and a desert and send the order directly to the WhatsApp with the delivery adress and the total cost.
+
+Available in English US and Portuguese BR
+
+<a href="https://lucaspaulii.github.io/driven_eats/">Deployment available here!</a>
